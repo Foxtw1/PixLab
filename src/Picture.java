@@ -113,9 +113,9 @@ public class Picture extends SimplePicture {
 				int green = pixelObj.getGreen();
 				int blue = pixelObj.getBlue();
 				int red = pixelObj.getRed();
-				pixelObj.setRed(red-255);
-				pixelObj.setGreen(green-255);
-				pixelObj.setBlue(blue-255);
+				pixelObj.setRed(255 -red);
+				pixelObj.setGreen(255-green);
+				pixelObj.setBlue(255-blue);
 
 			}
 		}
