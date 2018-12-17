@@ -19,7 +19,7 @@ public class PictureTester
 
   public static void testKeepOnlyBlue()
   {
-    Picture beach = new Picture("beach.jpg");
+    Picture beach = new Picture("seagull.jpg");
     beach.explore();
     beach.keepOnlyBlue();
     beach.explore();
@@ -110,6 +110,12 @@ public class PictureTester
     canvas.createCollage();
     canvas.explore();
   }
+  public static void testMyCollage()
+  {
+    Picture canvas = new Picture("640x480.jpg");
+    canvas.myCollage();
+    canvas.explore();
+  }
   
   /** Method to test edgeDetection */
   public static void testEdgeDetection()
@@ -138,9 +144,10 @@ public class PictureTester
     //testMirrorHorizontal();
     //testMirrorTemple();
     //testMirrorArms();
-    testMirrorGull();
+    //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
+    testMyCollage();
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
